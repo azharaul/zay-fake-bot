@@ -1,0 +1,104 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 325px;
+  min-height: 100vh;
+}
+
+.content {
+  margin: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background-color: yellow;
+  font-size: 24px;
+  padding: 16px;
+  margin-left: 10px;
+  height: 65px;
+  color: #222222;
+  font-weight: 600;
+  margin-top: 10px;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(196, 196, 0);
+  transition: ease-in-out all 0.5s;
+  -webkit-transition: ease-in-out all 0.5s;
+  -moz-transition: ease-in-out all 0.5s;
+  -ms-transition: ease-in-out all 0.5s;
+  -o-transition: ease-in-out all 0.5s;
+}
+
+input {
+  border: none;
+  background-color: #eaeaeaea;
+  color: #222222;
+  padding: 16px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+#pertanyaan {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+#loaders {
+  display: none;
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  border-top: 5px solid aqua;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  animation: 1s spin infinite linear;
+  -webkit-animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
